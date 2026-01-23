@@ -1,8 +1,14 @@
-# QWEL CREATIVE TEMPLATE
+# QWEL Fader Gallery
 
-[QWEL.DESIGN](https://qwel.design/) の作品集 Creative Tools のためのテンプレート
+- フェードアニメーションで遷移するギャラリー
+- **使い方**:  
+  _fader.scss をバンドルした css を読み込み,  
+  ギャラリー本体に [data-gallery="fader"] 属性を付与し,  
+  ギャラリーアイテムに [data-gallery-item] 属性を付与する
+- **オプション**  
+  data-interval: アニメーション時間間隔 (data属性で指定)
 
-[https://tools.qwel.design/](https://tools.qwel.design/)
+▶ Sample DEMO: [https://tools.qwel.design/fader/]
 
 ---
 

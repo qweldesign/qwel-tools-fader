@@ -253,6 +253,8 @@ button, input, select, textarea {
   height: 3.5rem;
   line-height: 3.5rem;
   margin-inline: auto;
+  position: relative;
+  overflow: hidden;
 }
 .main__button, .main__button:active {
   border: 0;
@@ -269,18 +271,16 @@ button, input, select, textarea {
 }
 .main__button:hover, .main__button:focus {
   text-decoration: none;
-  transform: scale(96%);
 }
 .main__button, .main__button:active {
-  background-color: var(--color--primary);
   color: var(--color--lightest);
+  background: linear-gradient(-30deg, #209fdf, rgb(121.2, 197.4, 235.8), #209fdf, #209fdf);
+  background-position: 0% 0%;
+  background-size: 150% 100%;
 }
 .main__button:hover, .main__button:focus {
-  background-color: var(--color--primary--active);
-  color: var(--color--darkest);
-}
-.main__button:hover, .main__button:focus {
-  box-shadow: 0 0 var(--spacing--small) var(--color--primary);
+  color: var(--color--lightest);
+  background-position: 100% 0%;
 }
 
 /**
@@ -437,4 +437,81 @@ button, input, select, textarea {
 }
 .breadcrumb__item span {
   background-color: rgba(32, 159, 223, 0.1);
+}
+
+/**
+ * Component - Fader
+ */
+.fader {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.fader__inner {
+  list-style: none;
+  padding-inline-start: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-block: 0;
+}
+.fader__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  margin-block: 0;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.fader__item.image-1 {
+  background: url("./assets/sampleImg01.jpg") no-repeat center center/cover scroll;
+}
+.fader__item.image-2 {
+  background: url("./assets/sampleImg02.jpg") no-repeat center center/cover scroll;
+}
+.fader__item.image-3 {
+  background: url("./assets/sampleImg03.jpg") no-repeat center center/cover scroll;
+}
+.fader__item.image-4 {
+  background: url("./assets/sampleImg04.jpg") no-repeat center center/cover scroll;
+}
+.fader__item.image-5 {
+  background: url("./assets/sampleImg05.jpg") no-repeat center center/cover scroll;
+}
+.fader__item.image-6 {
+  background: url("./assets/sampleImg06.jpg") no-repeat center center/cover scroll;
+}
+.fader__item:not(.is-current) {
+  z-index: 1;
+  opacity: 0;
+}
+
+.faderNav {
+  list-style: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  height: 1.5rem;
+  margin: var(--spacing--small) auto;
+  padding: 0;
+}
+.faderNav__item {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--color--primary);
+  cursor: pointer;
+}
+.faderNav__item:not(.is-current) {
+  background-color: var(--color--lighter);
 }

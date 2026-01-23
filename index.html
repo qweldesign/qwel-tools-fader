@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[Title Here] | QWEL in Action</title>
+    <title>Fader Gallery | QWEL in Action</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Noto+Sans:wght@100..900&family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet">
@@ -16,23 +16,34 @@
     <ul class="breadcrumb">
       <li class="breadcrumb__item"><a href="https://qwel.design/">QWEL in Action</a></li>
       <li class="breadcrumb__item"><a href="../">Creative Tools</a></li>
-      <li class="breadcrumb__item breadcrumb__item--current"><span>[Title Here]</span></li>
+      <li class="breadcrumb__item breadcrumb__item--current"><span>Fader Gallery</span></li>
     </ul>
     <main class="main">
       <div class="main__inner">
-        <h2 class="main__title">[Title Here] | Created by <span> ― QWEL.DESIGN</span></h2>
-        <h3 class="main__heading">Description</h3>
+        <div class="fader" data-gallery="fader">
+          <ul class="fader__inner" data-gallery-main>
+            <li class="fader__item image-1" data-gallery-item></li>
+            <li class="fader__item image-2" data-gallery-item></li>
+            <li class="fader__item image-3" data-gallery-item></li>
+            <li class="fader__item image-4" data-gallery-item></li>
+            <li class="fader__item image-5" data-gallery-item></li>
+            <li class="fader__item image-6" data-gallery-item></li>
+          </ul>
+        </div>
+        <h2 class="main__title">Fader Gallery | Created by <span> ― QWEL.DESIGN</span></h2>
         <ul class="main__list">
-          <li class="main__listItem">[Description Here]</li>
-          <li class="main__listItem">[Description Here]</li>
-          <li class="main__listItem">[Description Here]</li>
+          <li class="main__listItem">フェードアニメーションで遷移するギャラリー</li>
+          <li class="main__listItem">使い方: 
+            <br>_fader.scss をバンドルした css を読み込み,
+            <br>ギャラリー本体に [data-gallery="fader"] 属性を付与し,
+            <br>ギャラリーアイテムに [data-gallery-item] 属性を付与する
+          </li>
+          <li class="main__listItem">オプション: 
+            <br>data-interval: アニメーション時間間隔 (data属性で指定)
+          </li>
+          <li class="main__listItem">MITライセンスで提供しており, 商用/非商用問わず自由に利用可能です</li>
         </ul>
-        <h3 class="main__heading">Spec</h3>
-        <ul class="main__list">
-          <li class="main__listItem">[Spec Here]</li>
-          <li class="main__listItem">[Spec Here]</li>
-          <li class="main__listItem">[Spec Here]</li>
-        </ul>
+        <a class="main__button" href="https://github.com/qweldesign/qwel-tools-fader" target="_blank" rel="noopener">GitHubで見る</a>
       </div>
     </main>
     <footer id="footer" class="footer">
@@ -52,6 +63,6 @@
         <small class="footer__copyright"></small>
       </div>
     </footer>
-    <script src="./init.js"></script>
+    <script src="./init.js" type="module"></script>
   </body>
 </html>

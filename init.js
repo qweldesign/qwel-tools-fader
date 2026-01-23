@@ -18,3 +18,6 @@ class AutoCopyright {
 }
 
 new AutoCopyright(2019, 'QWEL.DESIGN');
+
+import Fader from './js/fader.js';
+new Fader();
