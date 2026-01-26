@@ -8,7 +8,7 @@
 - **オプション**  
   data-interval: アニメーション時間間隔 (data属性で指定)
 
-▶ Sample DEMO: [https://tools.qwel.design/fader/]
+▶ Sample DEMO: [https://qwel.design/tools/fader/]
 
 ---
 

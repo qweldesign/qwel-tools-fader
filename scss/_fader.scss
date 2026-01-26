@@ -33,7 +33,7 @@ $gallery-nav-active-color: theme-color($theme-accent) !default;
     transition: opacity 1s ease;
 
     @for $i from 1 through $gallery-image-count {
-      &.image-#{$i} {
+      &.is-image-#{$i} {
         background: url("./assets/sampleImg0#{$i}.jpg") no-repeat center center / cover scroll;
       }
     }
