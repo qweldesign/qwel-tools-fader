@@ -1,12 +1,23 @@
-## QWEL STARTER TEMPLATE
+# QWEL Fader Gallery
 
-[QWEL.DESIGN](https://qwel.design) のWeb開発のためのスターターキット
+- フェードアニメーションで遷移するギャラリー
+- **使い方**:  
+  _fader.scss をバンドルしたCSSを読み込み、  
+  ギャラリー本体に [data-gallery="fader"] 属性を付与し、  
+  ギャラリーアイテムに [data-gallery-item] 属性を付与する
+- **オプション**  
+  data-interval: アニメーション時間間隔 (data 属性で指定)
+
+▶ Sample DEMO: [https://qwel.design/tools/fader/]
 
 ---
 
 ## ライセンス | License
 
 MIT License
+
+このプロジェクトは、Webサイトやランディングページの基本となるUIユーティリティとして自由に使用できることを目的としています。  
+This project is intended to be freely used as a core UI utility for websites and landing pages.  
 
 詳しくは LICENSE ファイルをご覧ください。  
 See the LICENSE file for details.  
